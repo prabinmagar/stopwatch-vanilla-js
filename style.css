@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f8fb;
+}
+.stopwatch-wrapper{
+    padding: 2.4rem 3rem;
+    text-align: center;
+    background: #fff;
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);-moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.1);
+    border-radius: 10px;
+}
+.stopwatch-time{
+    font-size: 3.4rem;
+    margin-bottom: 1rem;
+}
+.stopwatch-time span{
+    display: inline-block;
+    font-weight: 700;
+    color: #0267C1;
+} 
+.stopwatch-time span:nth-child(odd){
+    width: 62px;
+}
+.stopwatch-time span:last-child{
+    width: 100px;
+}
+.btns{
+    padding: 0.2rem 0 1rem 0;
+}
+.btns button{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: none;
+    font-family: inherit;
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #fff;
+    margin-right: 0.4rem;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    outline: 0;
+}
+.btns button:hover{
+    -webkit-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.3);-moz-box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 17px 1px rgba(0,0,0,0.3);
+}
+.btns button:nth-child(1){
+    background-color: #CA3CFF;
+}
+.btns button:nth-child(2){
+    background-color: #DB324D;
+}
+
+@media screen and (max-width: 480px){
+    .stopwatch-time{
+        font-size: 2rem;
+    }
+    .stopwatch-time span:nth-child(odd){
+        width: 40px;
+    }
+    .stopwatch-time span:last-child{
+        width: 60px;
+    }
+}
